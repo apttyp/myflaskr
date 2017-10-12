@@ -13,6 +13,7 @@
   {% endif %}
   <ul class=entries>
   {% for entry in entries %}
+    <em>{{base_url}}</em>
     <li><h2><a href={{base_url}}/{{entry.text}} target="_parent">{{ entry.title }}</a></h2>{{ entry.text|safe }}
   {% else %}
     <li><em>Unbelievable.  No entries here so far</em>
