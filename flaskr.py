@@ -81,27 +81,27 @@ def logout():
     flash('You were logged out')
     return redirect(url_for('show_entries'))
 
-@app.route('about_us')
+@app.route('/about_us')
 def about_us():
     return render_template('about_us.html')
 
-@app.route('brief_introduction')
+@app.route('/brief_introduction')
 def brief_introduction():
     return render_template('brief_introduction.html')
 
-@app.route('product_display')
+@app.route('/product_display')
 def product_display():
     return render_template('product_display.html')
 
-@app.route('download')
+@app.route('/download')
 def download():
     return render_template('download.html')
 
-@app.route('online_communication')
+@app.route('/online_communication')
 def online_communication():
     return render_template('online_communication.html')
 
-@app.route('recruitment')
+@app.route('/recruitment')
 def recruitment():
     return render_template('recruitment.html')
 
